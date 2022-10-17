@@ -5,8 +5,8 @@ provider "azurerm" {
 
  terraform {
   backend "azurerm" {
-    resource_group_name = "tfmainrg"
-    storage_account_name = "terraformstoreg"
+    resource_group_name = "tf_rg_blobstore"
+    storage_account_name = "tfstorageweather"
     container_name = "tfstate"
     key = "terraform.tfstate"
   }
